@@ -7,7 +7,7 @@ public class Account implements Serializable{
 	double balance;
 	Customer owner;
 	
-	public Account(String accNo, Customer owner) {			//ÀÜ°í´Â ÀÚµ¿À¸·Î 0ÀÌ±â¸¸ ÇÔ.
+	public Account(String accNo, Customer owner) {			//ì”ê³ ëŠ” ìë™ìœ¼ë¡œ 0ì´ê¸°ë§Œ í•¨.
 		this.accNo = accNo;
 		this.owner = owner;
 	}
@@ -36,9 +36,4 @@ public class Account implements Serializable{
 		this.owner = owner;
 	}
 	
-	public void showInfo(){
-		System.out.printf("¿¹±İÁÖ : %s, °èÁÂ¹øÈ£ : %d, ÀÜ¾× : %f", owner.getName(), accNo, balance);
-	}
-	
-
 }

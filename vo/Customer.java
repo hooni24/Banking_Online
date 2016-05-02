@@ -46,9 +46,5 @@ public class Customer implements Serializable {
 	public void setAccList(ArrayList<Account> accList) {
 		this.accList = accList;
 	}
-
-	public void showInfo(){
-		System.out.printf("이름 : %s, 주민번호 : %s, 주소 : %s", name, jumin, address);
-	}
-
+	
 }
