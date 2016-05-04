@@ -1,3 +1,4 @@
+package common;
 
 public class BankData {
 	public final static int LOG_IN = 1;
@@ -10,8 +11,14 @@ public class BankData {
 	public final static int WITHDRAW = 8;
 	
 	private int command;
-	
-	
+
+	public int getCommand() {
+		return command;
+	}
+
+	public void setCommand(int command) {
+		this.command = command;
+	}
 	
 	
 	

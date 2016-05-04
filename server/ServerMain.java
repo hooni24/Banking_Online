@@ -2,7 +2,7 @@ package server;
 
 public class ServerMain {
 	public static void main(String[] args) {
-		new ServerGUI();
+		new Thread(new ServerGUI()).start();
 	}
 
 }

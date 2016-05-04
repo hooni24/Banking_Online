@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.Dimension;
 
-public class ClientGUI extends JFrame{
+public class ClientGUI extends JFrame implements Runnable, ActionListener{
 	JLabel lbl_welcome, lbl_acclist, lbl_accno, lbl_balance;
 	JList list_acclist;
 	JTextField tf_accno, tf_balance;
@@ -68,6 +70,17 @@ public class ClientGUI extends JFrame{
 		getContentPane().add(p_main);
 		setVisible(true);
 	}//constructor
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void run() {
+		
+	}
 
 }//class
 
